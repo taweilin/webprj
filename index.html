@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 1. top -->
+    <div class="bg-primary text-white">
+        <div class="container top d-flex">
+            <a href="#"><img src="images/logo-small.png" alt="Logo" class="logo" />日本<span class="season">四季</span>物語</a>
+            <ul class="menu d-flex align-items-center">
+                <li><a href="#">景觀列表</a></li>
+                <li><a href="#">關於我們</a></li>
+            </ul>
+            <ul class="menu d-flex align-items-center"></ul>
+                <li><a href="#">
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">
+                    favorite</span>
+                </a></li>
+                <li><a href="#">
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">
+                    person</span>
+                </a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- 2. header -->
+    <header class="bg-primary text-white search-container">
+        <div>
+            <div class="search-wrapper">
+                <input type="text" class="search-input" id="search-input" placeholder="搜尋">
+                <span class="material-symbols-outlined search-icon">search</span> 
+            </div>
+            <div class="d-flex">
+                <!-- 選項列表 -->
+                <ul class="options-list " id="options-list">
+                    <li>東京</li>
+                    <li>大阪</li>
+                    <li>滑雪</li>
+                    <li>京都</li>
+                    <li>東京迪士尼</li>
+                    <li>名古屋</li>
+                    <li>黑部立山</li>
+                    <li>淺草寺</li>
+                    <li>選項 9</li>
+                    <li>選項 10</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. main -->
+    <div class="main bg-primary">
+
+    <div class="item-list">
+        <div class="sort-label">按分數排序：由高到低</div> 
+        
+        <!-- 排序標籤 -->
+        <div class="item">
+            <img src="images/list_disney.png" alt="Item 1"> <!-- 這裡可以替換為實際圖片網址 -->
+            <div class="item-content">
+                <div class="item-title">
+                    東京迪士尼
+                    <span class="item-score">5.0</span> <!-- 分數 -->
+                    <span class="material-symbols-outlined star-icon">star</span> <!-- 星號圖示 -->
+                </div>
+                <p class="item-description">剛從東京迪士尼回來,整個人還沉浸在那夢幻的氛圍中!真的是一次難忘的體驗。剛從東京迪士尼回來,整個人還沉浸在那夢幻的氛圍中!真的是一次難忘的體驗。剛從東京迪士尼回來,整個人還沉浸在那夢幻的氛圍中!真的是一次難忘的體驗。</p>
+                <div class="d-flex align-items-fe justify-content-sb">
+                    <a href="#"><div class="view-more">查看更多</div></a>
+                    <div class="material-symbols-outlined heart-icon">favorite</div>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/list_osaka_castle.png" alt="Item 2">
+            <div class="item-content">
+                <div class="item-title">
+                    大阪城
+                    <span class="item-score">8.7</span>
+                    <span class="material-symbols-outlined star-icon">star</span>
+                </div>
+                <div class="item-description">剛從大阪城回來,整個人還沉浸在那夢幻的氛圍中!真的是一次難忘的體驗。剛從大阪城回來,整個人還沉浸在那夢幻的氛圍中!真的是一次難忘的體驗。剛從大阪城回來,整個人還沉浸在那夢幻的氛圍中!真的是一次難忘的體驗。</div>
+                <span class="view-more">查看更多</span>
+                <span class="material-symbols-outlined heart-icon">favorite</span>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/list_sensoji_temple.png" alt="Item 3">
+            <div class="item-content">
+                <div class="item-title">
+                    清水寺
+                    <span class="item-score">7.5</span>
+                    <span class="material-symbols-outlined star-icon">star</span>
+                </div>
+                <div class="item-description">剛從清水寺回來,整個人還沉浸在那夢幻的氛圍中!真的是一次難忘的體驗。剛從清水寺回來,整個人還沉浸在那夢幻的氛圍中!真的是一次難忘的體驗。剛從清水寺回來,整個人還沉浸在那夢幻的氛圍中!真的是一次難忘的體驗。</div>
+                <span class="view-more">查看更多</span>
+                <span class="material-symbols-outlined heart-icon">favorite</span>
+            </div>
+        </div>       
+        
+        <!-- 分頁功能 -->
+        <div class="pagination">
+            <span class="page-button" id="first-page"><span class="material-symbols-outlined">first_page</span></span> <!-- 第一頁 -->
+            <span class="page-button" id="prev-page"><span class="material-symbols-outlined">chevron_left</span></span> <!-- 上一頁 -->
+            <span class="page-number">第 1 頁</span> <!-- 當前頁數 -->
+            <span class="page-button" id="next-page"><span class="material-symbols-outlined">chevron_right</span></span> <!-- 下一頁 -->
+            <span class="page-button" id="last-page"><span class="material-symbols-outlined">last_page</span></span> <!-- 最後一頁 -->
+        </div>
+    </div>
+    </div>
+
+    <!-- 4. footer -->
+    <!-- ================================== -->
+    <footer class="bg-primary text-white">
+        <div class="container top d-flex">
+            <a href="#"><img src="images/logo-small.png" alt="Logo" class="logo" />日本<span class="season">四季</span>物語</a>
+            
+            <ul class="menu d-flex align-items-center ml-60">
+                <li><a href="#">景觀列表</a></li>
+                <li><a href="#">關於我們</a></li>
+            </ul>
+
+            <ul class="social d-flex mr-60">
+                <li><a href="#"><img src="images/ic-social-fb.png" alt="FB" /></a></li>
+                <li><a href="#"><img src="images/ic_social_ig.png" alt="IG" /></a></li>
+                <li><a href="#"><img src="images/ic_social_linkedin.png" alt="linkedin" /></a></li>
+                <li><a href="#"><img src="images/ic_social_twitter.png" alt="twitter" /></a></li>
+            </ul>
+    </footer>
+
+    <!-- 5. botton  -->
+    <div class="botton">
+        <p>Copyright 2024 日本四季物語 All Rights Reserved.
+        <br>僅供學習使用，無商業用途
+        </p>
+    </div>
+
+
+
+
+    <script>
+        const searchInput = document.getElementById("search-input");
+        
+        // 偵測按下 Enter 鍵時觸發搜尋
+        searchInput.addEventListener("keydown", function(event) {
+            if (event.key === "Enter") {
+                event.preventDefault();
+                const query = searchInput.value;
+                alert("搜尋: " + query); // 這裡你可以替換成實際的搜尋邏輯
+            }
+        });
+
+        // 分頁功能
+        const currentPage = 1; // 當前頁數
+        const totalPages = 5; // 總頁數
+
+        // 假設這裡是你需要的分頁功能的邏輯，你可以擴展這部分來處理實際的頁數變更
+        document.getElementById("first-page").addEventListener("click", function() {
+            alert("返回到第一頁");
+        });
+
+        document.getElementById("prev-page").addEventListener("click", function() {
+            alert("返回到上一頁");
+        });
+
+        document.getElementById("next-page").addEventListener("click", function() {
+            alert("前往下一頁");
+        });
+
+        document.getElementById("last-page").addEventListener("click", function() {
+            alert("前往最後一頁");
+        });
+    </script>
+</body>
+</html>
